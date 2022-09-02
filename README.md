@@ -7,7 +7,7 @@ This is a continued work of the [MICCAI paper](https://github.com/cuMIP/ctImage)
 - We facilitate a balanced training of the joint-task training by carefully designing two parallel branches to separate and leverage the two tasks. 
 - We reduce the computational burden by avoiding the use of our previous spatial landmark relative configuration regression
 
-![Network diagram as found in published manuscript](/Figures/Fig 2.jpg)
+![Network diagram as found in published manuscript](https://github.com/cuMIP/CranialCTProcessing/blob/master/Figures/Fig%201.jpg)
 
 ## Dependencies:
 - [Python](python.org)
