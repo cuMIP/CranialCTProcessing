@@ -2,12 +2,12 @@
 This is a repository for the [Joint Cranial Bone Labeling and Landmark Detection in Pediatric CT Images using Context Encoding](https://github.com/cuMIP/CranialCTProcessing). 
 This repository contains the final model as described in the manuscript. The model is stored as a [TorchScript](https://pytorch.org/docs/stable/jit.html) jit file ``Model.dat``.
 
-This is a continued work of the MICCAI paper(https://github.com/cuMIP/ctImage) while exhibiting several substantial extensions:
-- We construct the model based on a modified densly connected network(https://ieeexplore.ieee.org/document/8099726) for improved feature representation learning for the challenging identification of anatomical structures in a highly variable dataset of children with cranial pathology.
+This is a continued work of the [MICCAI paper](https://github.com/cuMIP/ctImage) while exhibiting several substantial extensions:
+- We construct the model based on a modified [densly connected network](https://ieeexplore.ieee.org/document/8099726) for improved feature representation learning for the challenging identification of anatomical structures in a highly variable dataset of children with cranial pathology.
 - We facilitate a balanced training of the joint-task training by carefully designing two parallel branches to separate and leverage the two tasks. 
 - We reduce the computational burden by avoiding the use of our previous spatial landmark relative configuration regression
 
-![Network diagram as found in published manuscript](/Figures/Fig2.jpg)
+![Network diagram as found in published manuscript](/Figures/Fig 2.jpg)
 
 ## Dependencies:
 - [Python](python.org)
