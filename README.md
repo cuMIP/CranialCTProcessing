@@ -50,7 +50,7 @@ binaryImage = DataProcessing.CreateBoneMask(ctImage)
 ctImage = DataProcessing.ResampleAndMaskImage(ctImage, binaryImage)
 
 ### model
-modelPath = './MiccaiFinalModel.dat'
+modelPath = './Model.dat'
 device = ModelConfiguration.getDevice()
 model = ModelConfiguration.adaptModel(modelPath, device)
 imageData = ModelConfiguration.adaptData(ctImage, device)
