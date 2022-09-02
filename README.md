@@ -2,18 +2,18 @@
 This is a repository for the [Joint Cranial Bone Labeling and Landmark Detection in Pediatric CT Images using Context Encoding](https://github.com/cuMIP/CranialCTProcessing). 
 This repository contains the final model as described in the manuscript. The model is stored as a [TorchScript](https://pytorch.org/docs/stable/jit.html) jit file ``Model.dat``. Our purpose is to automatically annotate four landmarks at the cranial base and label the five cranial bone plates.
 
-![Landmarks and bone labels](https://github.com/cuMIP/CranialCTProcessing/blob/master/Figures/Fig%201.jpg)
+![Landmarks and bone labels](https://github.com/cuMIP/CranialCTProcessing/blob/main/Figures/Fig%201.jpg)
 
 This is a continued work of the [MICCAI paper](https://github.com/cuMIP/ctImage) while exhibiting several substantial extensions:
 - We construct the model based on a modified densly connected network ([DenseNet](https://ieeexplore.ieee.org/document/8099726)) for improved feature representation learning for the challenging identification of anatomical structures in a highly variable dataset of children with cranial pathology.
 - We facilitate a balanced training of the joint-task training by carefully designing two parallel branches to separate and leverage the two tasks. 
 - We reduce the computational burden by avoiding the use of our previous spatial landmark relative configuration regression
 
-![Network diagram as found in published manuscript](https://github.com/cuMIP/CranialCTProcessing/blob/master/Figures/Fig%202.jpg)
+![Network diagram as found in published manuscript](https://github.com/cuMIP/CranialCTProcessing/blob/main/Figures/Fig%202.jpg)
 
 The DenseNet architecture and our context encoding module are shown below. The context encoding module aims to highlight features that are relavent to the tasks via a channel-wise mechanism. The context learning is regularized by landmark vector displacement maps.
 
-![DenseNet and Context encoding](https://github.com/cuMIP/CranialCTProcessing/blob/master/Figures/Fig%203.jpg)
+![DenseNet and Context encoding](https://github.com/cuMIP/CranialCTProcessing/blob/main/Figures/Fig%203.jpg)
 
 ## Dependencies:
 - [Python](python.org)
